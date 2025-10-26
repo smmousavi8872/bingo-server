@@ -1,0 +1,784 @@
+ {
+  "cards": [
+    {
+      "id": 1,
+      "name": "Card 1",
+      "matrix": [
+        [
+          -1,
+          50,
+          56,
+          16,
+          26,
+          45,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          75,
+          25,
+          -1,
+          -1,
+          17,
+          7,
+          90
+        ],
+        [
+          -1,
+          -1,
+          8,
+          30,
+          60,
+          -1,
+          81,
+          2,
+          -1
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 75
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 2
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 50
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 26
+        }
+      ],
+      "color": {
+        "background": "#c345a6",
+        "backgroundGradient1": "#e939de",
+        "backgroundGradient2": "#076d18",
+        "backgroundGradient3": "#652146",
+        "titleColor": "#2532a8",
+        "textColor": "#3f94de",
+        "borderColor": "#779364"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Card 2",
+      "matrix": [
+        [
+          -1,
+          -1,
+          -1,
+          78,
+          63,
+          10,
+          -1,
+          71,
+          40
+        ],
+        [
+          -1,
+          -1,
+          84,
+          9,
+          89,
+          -1,
+          56,
+          -1,
+          27
+        ],
+        [
+          -1,
+          -1,
+          73,
+          19,
+          57,
+          -1,
+          72,
+          -1,
+          4
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 10
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 40
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 71
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 84
+        }
+      ],
+      "color": {
+        "background": "#985d1c",
+        "backgroundGradient1": "#9318fa",
+        "backgroundGradient2": "#49a27c",
+        "backgroundGradient3": "#2a87e6",
+        "titleColor": "#0bfa88",
+        "textColor": "#c46dfa",
+        "borderColor": "#3db097"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Card 3",
+      "matrix": [
+        [
+          -1,
+          36,
+          2,
+          -1,
+          -1,
+          15,
+          -1,
+          31,
+          70
+        ],
+        [
+          -1,
+          59,
+          -1,
+          25,
+          -1,
+          -1,
+          5,
+          13,
+          55
+        ],
+        [
+          54,
+          -1,
+          -1,
+          -1,
+          71,
+          76,
+          24,
+          79,
+          -1
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 59
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 31
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 2
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 79
+        }
+      ],
+      "color": {
+        "background": "#3acbf6",
+        "backgroundGradient1": "#c8c2b7",
+        "backgroundGradient2": "#70f5c2",
+        "backgroundGradient3": "#6ab6fb",
+        "titleColor": "#2059d0",
+        "textColor": "#1f73b1",
+        "borderColor": "#19d130"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Card 4",
+      "matrix": [
+        [
+          -1,
+          2,
+          -1,
+          30,
+          9,
+          61,
+          -1,
+          -1,
+          14
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          87,
+          6,
+          51,
+          62,
+          -1,
+          84
+        ],
+        [
+          63,
+          -1,
+          12,
+          56,
+          -1,
+          -1,
+          17,
+          15,
+          -1
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 56
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 61
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 30
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 61
+        }
+      ],
+      "color": {
+        "background": "#fbd320",
+        "backgroundGradient1": "#d1b1f7",
+        "backgroundGradient2": "#35bc27",
+        "backgroundGradient3": "#67d4b9",
+        "titleColor": "#9e6a67",
+        "textColor": "#0600a1",
+        "borderColor": "#326908"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Card 5",
+      "matrix": [
+        [
+          -1,
+          -1,
+          88,
+          20,
+          53,
+          -1,
+          31,
+          -1,
+          50
+        ],
+        [
+          -1,
+          -1,
+          49,
+          5,
+          -1,
+          70,
+          81,
+          22,
+          -1
+        ],
+        [
+          9,
+          28,
+          6,
+          84,
+          -1,
+          -1,
+          -1,
+          -1,
+          45
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 6
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 5
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 88
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 9
+        }
+      ],
+      "color": {
+        "background": "#ffd3dc",
+        "backgroundGradient1": "#e141cc",
+        "backgroundGradient2": "#c7a0c8",
+        "backgroundGradient3": "#fbb6f6",
+        "titleColor": "#2e58c1",
+        "textColor": "#1c79d0",
+        "borderColor": "#f212e3"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Card 6",
+      "matrix": [
+        [
+          34,
+          -1,
+          57,
+          -1,
+          2,
+          -1,
+          26,
+          -1,
+          41
+        ],
+        [
+          48,
+          -1,
+          72,
+          -1,
+          44,
+          -1,
+          -1,
+          67,
+          42
+        ],
+        [
+          -1,
+          -1,
+          79,
+          -1,
+          51,
+          70,
+          38,
+          -1,
+          45
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 34
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 67
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 70
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 72
+        }
+      ],
+      "color": {
+        "background": "#579294",
+        "backgroundGradient1": "#4accb0",
+        "backgroundGradient2": "#46279a",
+        "backgroundGradient3": "#717b03",
+        "titleColor": "#690dbe",
+        "textColor": "#4f4878",
+        "borderColor": "#8ecd30"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Card 7",
+      "matrix": [
+        [
+          -1,
+          3,
+          -1,
+          53,
+          -1,
+          55,
+          -1,
+          32,
+          15
+        ],
+        [
+          27,
+          -1,
+          28,
+          8,
+          -1,
+          -1,
+          45,
+          -1,
+          13
+        ],
+        [
+          -1,
+          16,
+          73,
+          6,
+          76,
+          -1,
+          84,
+          -1,
+          -1
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 73
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 15
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 45
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 6
+        }
+      ],
+      "color": {
+        "background": "#42e3e8",
+        "backgroundGradient1": "#279b40",
+        "backgroundGradient2": "#96bbca",
+        "backgroundGradient3": "#7cef27",
+        "titleColor": "#546d4b",
+        "textColor": "#f2cc9f",
+        "borderColor": "#6c6654"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Card 8",
+      "matrix": [
+        [
+          -1,
+          58,
+          13,
+          -1,
+          79,
+          8,
+          -1,
+          66,
+          -1
+        ],
+        [
+          6,
+          -1,
+          70,
+          -1,
+          -1,
+          35,
+          50,
+          30,
+          -1
+        ],
+        [
+          -1,
+          48,
+          -1,
+          61,
+          -1,
+          80,
+          21,
+          -1,
+          40
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 30
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 50
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 50
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 70
+        }
+      ],
+      "color": {
+        "background": "#6d543a",
+        "backgroundGradient1": "#c401f9",
+        "backgroundGradient2": "#b0e5e0",
+        "backgroundGradient3": "#ddaac0",
+        "titleColor": "#e747bb",
+        "textColor": "#e4c4df",
+        "borderColor": "#dcd347"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Card 9",
+      "matrix": [
+        [
+          -1,
+          -1,
+          6,
+          75,
+          -1,
+          -1,
+          22,
+          56,
+          85
+        ],
+        [
+          30,
+          -1,
+          -1,
+          82,
+          1,
+          -1,
+          -1,
+          61,
+          87
+        ],
+        [
+          58,
+          40,
+          -1,
+          5,
+          -1,
+          -1,
+          62,
+          51,
+          -1
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 56
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 1
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 6
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 22
+        }
+      ],
+      "color": {
+        "background": "#be83c1",
+        "backgroundGradient1": "#d5ef49",
+        "backgroundGradient2": "#e98908",
+        "backgroundGradient3": "#809a64",
+        "titleColor": "#a21bc1",
+        "textColor": "#c47513",
+        "borderColor": "#5a1f40"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Card 10",
+      "matrix": [
+        [
+          -1,
+          -1,
+          89,
+          81,
+          -1,
+          -1,
+          29,
+          84,
+          11
+        ],
+        [
+          -1,
+          80,
+          36,
+          -1,
+          71,
+          -1,
+          -1,
+          16,
+          76
+        ],
+        [
+          -1,
+          22,
+          -1,
+          72,
+          -1,
+          -1,
+          61,
+          68,
+          9
+        ]
+      ],
+      "prizes": [
+        {
+          "id": 1,
+          "title": "First Five",
+          "amount": 100,
+          "type": "cash",
+          "number": 36
+        },
+        {
+          "id": 2,
+          "title": "Top Line",
+          "amount": 200,
+          "type": "cash",
+          "number": 72
+        },
+        {
+          "id": 3,
+          "title": "Middle Line",
+          "amount": 300,
+          "type": "points",
+          "number": 16
+        },
+        {
+          "id": 4,
+          "title": "Full House",
+          "amount": 500,
+          "type": "bonus",
+          "number": 89
+        }
+      ],
+      "color": {
+        "background": "#840629",
+        "backgroundGradient1": "#6bfeed",
+        "backgroundGradient2": "#8b9d84",
+        "backgroundGradient3": "#d778e0",
+        "titleColor": "#be61b5",
+        "textColor": "#cb6dc0",
+        "borderColor": "#68e1a8"
+      }
+    }
+  ]
+  }
