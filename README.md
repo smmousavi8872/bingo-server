@@ -1,55 +1,38 @@
 
-# Cards API (Go)
+# Bingo Cards API (Go)
 
-Serve your `cards.json` over HTTP for the Android client.
+Minimal Go server that serves `cards.json` for your Android client.
 
 ## Endpoints
 - `GET /health` → `{"status":"ok"}`
-- `GET /cards` → contents of `cards.json`
+- `GET /cards` → streams `cards.json`
 
 ## Run locally
 ```bash
-cd server-go
 go run .
-# Then browse http://localhost:8000/cards
+# http://localhost:8000/health
+# http://localhost:8000/cards
 ```
 
-## Build a binary
+## Docker (local)
 ```bash
-go build -o cards-api .
-./cards-api
+docker build -t bingo-server .
+docker run --rm -p 8000:8000 bingo-server
 ```
 
-## Docker
-```bash
-docker build -t cards-api-go:latest .
-docker run --rm -p 8000:8000 cards-api-go:latest
-```
-
-## Deploy to Koyeb (two ways)
-
-### A) Buildpack (no Docker needed)
-1. Push this folder to GitHub as a repository (e.g., `cards-api-go`).
-2. On Koyeb: Create App → Web Service → from GitHub.
-3. Runtime: **Go** (auto-detected).
-4. Command (Start): leave empty (Koyeb runs the built binary) *or* set to `./cards-api`.
-   - Ensure your repo root contains `main.go` and `go.mod` (it does).
-5. Deploy. Your app will be available at `https://<app>.koyeb.app/`
-
-### B) Docker
-1. Push repo to GitHub.
-2. On Koyeb: Create App → Web Service → select Dockerfile from repo.
-3. Deploy.
-4. Service will expose:
+## Deploy to Koyeb
+1. Push these files to the **repo root**.
+2. In Koyeb → Create App → Web Service → From GitHub.
+3. Builder: **Dockerfile**
+   - Build context: `/` (repo root)
+   - Dockerfile path: `Dockerfile` (no leading slash)
+4. Deploy. You’ll get `https://<app>.koyeb.app/`.
    - `GET /health`
    - `GET /cards`
 
-## Android baseUrl
-Use the public Koyeb URL, e.g.:
-```kotlin
-baseUrl("https://<app>.koyeb.app/")
-```
+### Environment
+- `PORT` is set by Koyeb automatically.
+- `CARDS_FILE` (optional): override JSON path (default `/app/cards.json`).
 
 ## Notes
-- CORS is open (`*`) for dev convenience.
-- Server uses `$PORT` if provided (Koyeb sets it), default 8000.
+- Keep `cards.json` at repo root and **not** in `.dockerignore`.

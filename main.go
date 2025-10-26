@@ -32,28 +32,31 @@ func main() {
 
 	mux.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
-		json.NewEncoder(w).Encode(healthResp{Status: "ok"})
+		_ = json.NewEncoder(w).Encode(healthResp{Status: "ok"})
 	})
 
 	mux.HandleFunc("/cards", func(w http.ResponseWriter, r *http.Request) {
-		// stream the file verbatim to avoid accidental mutation
-		f, err := os.Open("cards.json")
+		// Path is configurable via env; defaults to ./cards.json
+		path := os.Getenv("CARDS_FILE")
+		if path == "" {
+			path = "cards.json"
+		}
+		f, err := os.Open(path)
 		if err != nil {
 			http.Error(w, "cards.json not found", http.StatusInternalServerError)
 			return
 		}
 		defer f.Close()
 		w.Header().Set("Content-Type", "application/json")
-		io.Copy(w, f)
+		_, _ = io.Copy(w, f)
 	})
 
-	// root helpful info
+	// root
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/plain; charset=utf-8")
-		w.Write([]byte("Cards API (Go)\n\nGET /health\nGET /cards\n"))
+		_, _ = w.Write([]byte("Bingo Cards API (Go)\n\nGET /health\nGET /cards\n"))
 	})
 
-	// server
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8000"
